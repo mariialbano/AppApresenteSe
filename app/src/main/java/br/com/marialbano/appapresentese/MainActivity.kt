@@ -23,24 +23,24 @@ class MainActivity : AppCompatActivity() {
         // Define o layout da atividade a partir do arquivo XML (activity_main.xml)
         setContentView(R.layout.activity_main)
 
-        nomeEmpresa=findViewById(R.id.nomeEmpresa)
-        atuacaoEmpresa=findViewById(R.id.atuacaoEmpresa)
-        resultado=findViewById(R.id.resultado)
+        nomeEmpresa = findViewById(R.id.nomeEmpresa)
+        atuacaoEmpresa = findViewById(R.id.atuacaoEmpresa)
+        resultado = findViewById(R.id.resultado)
 
 
         // inicializa as propriedades com as views correspondentes
         nomeEmpresa.text = "FIAP"
         atuacaoEmpresa.text = "Analista de dados"
         resultado.text = ""
-
+    }
         // funcao chamada quando o botao é clicado ou quando o usuario da um TAP
-        fun combinarTextos(view:View){
-            //criar uma string combinando o texto das views nomeEmpresa e atuacaoEmpresa
-            val textoFinal = "${nomeEmpresa.text} - ${atuacaoEmpresa.text}"
+    fun combinarTextos(view:View){
+        //criar uma string combinando o texto das views nomeEmpresa e atuacaoEmpresa
+        val textoFinal = "${nomeEmpresa.text} - ${atuacaoEmpresa.text}"
 
-            //define o texto da view resultado com o texto combinado
-            resultado.text= textoFinal
-        }
+        //define o texto da view resultado com o texto combinado
+        resultado.text= textoFinal
+
 
     }
 }
