@@ -11,7 +11,7 @@
         android:id="@+id/nomeEmpresa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below ="@id/nomeEmpresa"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop = "143dp"
         android:textSize="18sp"
@@ -22,7 +22,7 @@
         android:id="@+id/atuacaoEmpresa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below ="@id/atuacaoEmpresa"
+        android:layout_below ="@id/nomeEmpresa"
         android:text="Analista de dados"
         android:layout_centerHorizontal="true"
         android:layout_marginTop = "151dp"
@@ -44,11 +44,12 @@
         android:id="@+id/resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text=""
+
         android:layout_centerHorizontal="true"
         android:layout_below ="@id/combinarButton"
         android:textSize="20sp"
-        android:text=""
-        android:layout_marginTop = "146dp"
+        android:layout_marginTop = "16dp"
         />
 
 </RelativeLayout>
